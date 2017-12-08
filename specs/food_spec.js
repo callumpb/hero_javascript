@@ -16,4 +16,5 @@ describe('Food', function () {
     assert.strictEqual(food.replenishment, 5);
   });
 
+  
 });

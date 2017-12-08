@@ -5,7 +5,11 @@ describe('Task', function () {
   let task;
 
   beforeEach(function () {
-    task = new Task('easy', 'urgent', 1000);
+    task = new Task('save world', 'easy', 'urgent', 1000, false);
+  });
+
+  it('should have a name', function () {
+    assert.strictEqual(task.name, 'save world');
   });
 
   it('should have a difficulty', function () {
@@ -18,6 +22,10 @@ describe('Task', function () {
 
   it('should have a reward', function () {
     assert.strictEqual(task.reward, 1000);
+  });
+
+  it('should be able to be marked as completed', function () {
+    assert.strictEqual(task.isCompleted(), false);
   });
 
 });
