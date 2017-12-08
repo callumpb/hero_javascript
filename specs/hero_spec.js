@@ -50,6 +50,7 @@ describe('Hero', function () {
   //   hero.addTask(task);
   //   hero.removeTask(task);
   //   assert.strictEqual(hero.removeTask('Save world'), task);
+  //   //assert.strictEqual(hero.numberOfTasks(), 0);
   // });
 
   it('should be able to talk/say own name', function () {

@@ -28,7 +28,7 @@ Hero.prototype.taskName = function(name) {
 
 // Hero.prototype.removeTask = function(name) {
 //   return _.remove(this.tasks, function(task) {
-//     return task.name === name;
+//     // return task.name === name;
 //   });
 // };
 
