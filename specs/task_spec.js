@@ -3,9 +3,11 @@ const Task = require('../task.js');
 
 describe('Task', function () {
   let task;
+  // let task2
 
   beforeEach(function () {
-    task = new Task('save world', 'easy', 'urgent', 1000, false);
+    task = new Task('save world', 'hard', 'urgent', 1000, false);
+    task2 = new Task('destroy world', 'easy', 'not urgent', -1000, false);
   });
 
   it('should have a name', function () {
@@ -13,7 +15,7 @@ describe('Task', function () {
   });
 
   it('should have a difficulty', function () {
-    assert.strictEqual(task.difficulty, 'easy');
+    assert.strictEqual(task.difficulty, 'hard');
   });
 
   it('should have an urgency level', function () {

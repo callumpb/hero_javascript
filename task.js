@@ -1,7 +1,7 @@
 const _ = require('lodash');
 
 const Task = function (name, difficulty, urgency, reward, completed) {
-  this.name = name;
+  this.name = name
   this.difficulty = difficulty;
   this.urgency = urgency;
   this.reward = reward;
