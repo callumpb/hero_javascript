@@ -19,12 +19,13 @@ Hero.prototype.addTask = function (task) {
   this.tasks.push(task);
 };
 
-
 Hero.prototype.taskName = function(name) {
   return _.find(this.tasks, function(task) {
     return task.name === name;
   });
 };
+
+
 
 // Hero.prototype.removeTask = function(name) {
 //   return _.remove(this.tasks, function(task) {

@@ -57,6 +57,9 @@ describe('Hero', function () {
     assert.strictEqual(hero.talk(), 'Kris');
   });
 
+  it('should be able to eat food', function () {
+    
+  });
 
 
 });
